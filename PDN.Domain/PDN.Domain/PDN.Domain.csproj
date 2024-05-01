@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Entities\Teams\" />
-    <Folder Include="Entities\Tasks\" />
-    <Folder Include="Entities\Projects\" />
-    <Folder Include="Enums\" />
+    <ProjectReference Include="..\..\Shared\PDN.Shared.Abstraction\PDN.Shared.Abstraction.csproj" />
   </ItemGroup>
 
 </Project>

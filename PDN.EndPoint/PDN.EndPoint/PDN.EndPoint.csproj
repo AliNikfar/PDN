@@ -1,9 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\PDN.Application\PDN.Application.csproj" />
+    <ProjectReference Include="..\..\PDN.Domain\PDN.Domain\PDN.Domain.csproj" />
+    <ProjectReference Include="..\..\PDN.Infrastructure\PDN.Infrastructure\PDN.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\PDN.Presentation\PDN.Presentation.csproj" />
+    <ProjectReference Include="..\..\Shared\PDN.Shared.Abstraction\PDN.Shared.Abstraction.csproj" />
+  </ItemGroup>
 
 </Project>

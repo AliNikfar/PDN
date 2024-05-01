@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDN.Presentation", "PDN.Pre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDN.EndPoint", "PDN.EndPoint\PDN.EndPoint\PDN.EndPoint.csproj", "{AC650544-6E39-4D3C-B058-1D0F54826E9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDN.Domain", "PDN.Domain\PDN.Domain\PDN.Domain.csproj", "{3B9D2CBA-ABCE-47CE-B32D-4315F27E92A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDN.Domain", "PDN.Domain\PDN.Domain\PDN.Domain.csproj", "{3B9D2CBA-ABCE-47CE-B32D-4315F27E92A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{42BF76EB-1A41-4D00-9B05-04E173619DC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
