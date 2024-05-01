@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DBContexes\" />
+    <Folder Include="Repos\" />
+  </ItemGroup>
+
 </Project>
