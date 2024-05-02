@@ -14,6 +14,7 @@ namespace PDN.Application.Mapper
         public ProjectDTOProfile()
         {
             CreateMap<GetAllProjectsDTO, Project>().ReverseMap();
+            CreateMap<List<GetAllProjectsDTO>,List<Project>>().ReverseMap();
         }
     }
 }

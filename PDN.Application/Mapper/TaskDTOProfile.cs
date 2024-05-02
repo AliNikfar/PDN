@@ -15,6 +15,7 @@ namespace PDN.Application.Mapper
         public TaskDTOProfile()
         {
             CreateMap<GetAllTasksDTO,Task>().ReverseMap();
+            CreateMap<List<GetAllTasksDTO>,List <Task>>().ReverseMap();
         }
     }
 }
