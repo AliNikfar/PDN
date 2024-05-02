@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using PDN.Domain.Queries.Projects;
 using PDN.Domain.Queries.Tasks;
 using System;
 using System.Collections.Generic;

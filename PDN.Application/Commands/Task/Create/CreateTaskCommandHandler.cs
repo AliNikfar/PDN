@@ -2,7 +2,6 @@
 using PDN.Application.StateSaver;
 using PDN.Domain.Commands.Tasks;
 using PDN.Domain.Queries.Projects;
-using PDN.Domain.Queries.Tasks;
 
 namespace PDN.Application.Commands.Task.Create
 {

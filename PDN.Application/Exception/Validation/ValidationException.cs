@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PDN.Application.Exception.Validation
 {
-    public sealed class ValidationException : Exception.Application.ApplicationException("Validation Failure", "One or more validation errors occurred")
+    public sealed class ValidationException : Exception.Application.ApplicationException//("Validation Failure","One or more validation errors occurred")
     {
 
         public ValidationException(IReadOnlyDictionary<string, string[]> errorsDictionary) 

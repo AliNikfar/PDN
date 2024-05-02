@@ -12,10 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\PDN.Application\PDN.Application.csproj" />
-    <ProjectReference Include="..\..\PDN.Domain\PDN.Domain\PDN.Domain.csproj" />
     <ProjectReference Include="..\..\PDN.Infrastructure\PDN.Infrastructure\PDN.Infrastructure.csproj" />
     <ProjectReference Include="..\..\PDN.Presentation\PDN.Presentation.csproj" />
-    <ProjectReference Include="..\..\Shared\PDN.Shared.Abstraction\PDN.Shared.Abstraction.csproj" />
   </ItemGroup>
 
 </Project>

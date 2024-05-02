@@ -1,4 +1,6 @@
-﻿using PDN.Domain.Entities.Projects;
+﻿using AutoMapper;
+using PDN.Application.Queries.Tasks.GetAll;
+using PDN.Domain.Entities.Projects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +13,7 @@ namespace PDN.Application.Mapper
     {
         public TaskDTOProfile()
         {
-            CreateMap<GetAllTaskDTO, Task>().ReverseMap();
+            CreateMap<GetAllTasksDTO, Task>().ReverseMap();
         }
     }
-}
 }
