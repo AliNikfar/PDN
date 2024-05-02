@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Task = PDN.Domain.Entities.Tasks.Task;
 
 namespace PDN.Application.Mapper
 {
@@ -13,7 +14,7 @@ namespace PDN.Application.Mapper
     {
         public TaskDTOProfile()
         {
-            CreateMap<GetAllTasksDTO, Task>().ReverseMap();
+            CreateMap<GetAllTasksDTO,Task>().ReverseMap();
         }
     }
 }

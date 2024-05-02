@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using MediatR;
 using PDN.Domain.Queries.Tasks;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace PDN.Application.Queries.Tasks.GetAll
     public class GetAllTaskQueryHandler : IRequestHandler<GetAllTaskQuery, IEnumerable<GetAllTasksDTO>>
     {
         private readonly ITaskQueryRepo _taskQueryRepo;
+        private readonly IMapper _mapper;
 
         public GetAllTaskQueryHandler(ITaskQueryRepo taskQueryRepo)
         {
@@ -21,16 +23,10 @@ namespace PDN.Application.Queries.Tasks.GetAll
         {
             var tasks = await _taskQueryRepo.GetAll(i => i.IsDeleted == false);
 
-            return from task in tasks
-                   select new GetAllTasksDTO()
-                   {
-                       Id = task.Id,
-                       Description = task.Description,
-                       Title = task.Title,
-                       DueDate = task.DueDate,
-                       ProjectId = task.ProjectId,
-                       Status = task.Status
-                   };
+            var result = _mapper.Map<GetAllTasksDTO>(tasks);
+
+                return (IEnumerable<GetAllTasksDTO>)result;
+
         }
     }
 }
