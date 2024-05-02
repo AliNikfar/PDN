@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Task = PDN.Domain.Entities.Tasks.Task;
 
 namespace PDN.Infrastructure.DBContexts
 {
